@@ -1,5 +1,7 @@
 <?php 
 include("config.php"); 
+include("header.php"); 
+
 
 
 if(isset($_POST['btn_register'])) {
@@ -35,28 +37,28 @@ if(isset($_POST['btn_register'])) {
 ?>
 
 <body class="Register-body">
-<section class="register">
-  <div class="wrapper">
+<section class="login-main-sec">
+  <div class="from-inner-area">
     <form action="" method="post">
-      <h1><span>R</span>egister</h1>
+      <h2><span>R</span>egister</h2>
       <div class="input-box">
-        <input type="text" placeholder="Full Name" name="name" required>
+        <input type="text" id="fname" placeholder="Full Name" name="name" required>
         <i class='bx bxs-user'></i>
       </div>
       <div class="input-box">
-        <input type="email" placeholder="Email Address" name="email" required>
+        <input type="email" id="fname" placeholder="Email Address" name="email" required>
         <i class='bx bxs-envelope'></i>
       </div>
       <div class="input-box">
-        <input type="password" placeholder="Password" name="password" required>
+        <input type="password" id="fname" placeholder="Password" name="password" required>
         <i class='bx bxs-lock-alt'></i>
       </div>
       <div class="input-box">
-        <input type="password" placeholder="Confirm Password" name="confirm_password" required>
+        <input type="password" id="fname" placeholder="Confirm Password" name="confirm_password" required>
         <i class='bx bxs-lock-alt'></i>
       </div>
-      <button type="submit" class="btn" name="btn_register">Register</button>
-      <div class="login-link">
+      <button type="submit" class="login-btn" name="btn_register">Register</button>
+      <div class="more-btn-inner-area">
         <p>Already have an account? <a href="login.php">Login</a></p>
       </div>
     </form>
@@ -65,3 +67,6 @@ if(isset($_POST['btn_register'])) {
 </body>
 
 
+<?php 
+include("footer.php"); 
+?>

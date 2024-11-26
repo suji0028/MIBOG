@@ -111,13 +111,6 @@
                                 </div>
                             </div>
 
-                            <!--row one end-->
-				<?php if (isset($_SESSION['user'])) { ?>
-                    <a href="logout.php" class="button">Logout</a>
-                <?php } else { ?>
-                    <a href="login.php" class="button">Login</a>
-                <?php } ?>
-
                             <!--row two start-->
 
                             <div class="col-md-3">

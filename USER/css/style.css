@@ -126,6 +126,7 @@ input#fname {
   border: none;
   width: 100%;
 }
+
 .more-btn-area {
   display: flex;
   justify-content: space-between;

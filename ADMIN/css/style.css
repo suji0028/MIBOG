@@ -359,4 +359,88 @@ nav .logo {
   }
  
 
-  
+  .banner-main-sec{
+  background-image: url(../img/banner-img.jpeg);
+  padding: 300px 0; 
+  background-size: cover;
+  object-fit: cover;
+}
+.banner-imnner-text h1 {
+  color: white;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 100;
+  width: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 34%;
+  transform: translateX(-50px);
+}
+
+
+.img-main-sec{
+  position: relative;
+}
+.img-main-sec .container-fluid{
+  padding: 10px 20px ;
+}
+.photo-img-area img{
+  height: 100%;
+  width: 100%;
+}
+.img-inner-area .col-md-3{
+  padding: 1px;
+  margin: 0;
+  cursor: pointer;
+  position: relative;
+}
+.product-imt{
+  color: white;
+  font-size: 25px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.product-imt:hover{
+  color: white;
+}
+.photo-img-text-price {
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  transform: translateY(-30px);
+}
+.photo-img-price p{
+  font-size: 20px;
+  color: white;
+  font-weight: 100;
+}
+.photo-img-text-price{
+  opacity: 0;
+}
+
+.img-text-area:hover .photo-img-text-price{
+  opacity: 1;
+  transition: ease-in-out 0.5s;
+}
+
+.photo-img-text {
+  position: relative;
+  left: 45px;
+}
+.photo-img-price {
+  position: relative;
+  left: 130px;
+  max-width: max-content;
+}
+.photo-img-area{
+  height: 100%;
+  width: 100%;
+}
+.photo-img-area img {
+  max-width: max-content;
+  height: 100%;
+  width: 100%;
+}

@@ -74,10 +74,9 @@
                             <?php }
                         ?> -->
                         <?php if (isset($_SESSION['user'])) { ?>
-                <li><a href="logout.php"><span class="icon-lock"></span> Logout</a></li>
+                <li  ><a href="logout.php"><span class="footer-menu-btn"></span> Logout</a></li>
             <?php } else { ?>
-                <li><a href="register.php">Register</a></li>
-                <li><a href="login.php"><span class="icon-lock"></span> Login</a></li>
+                <li><a href="login.php"><span class="footer-menu-btn"></span> Login</a></li>
                 <?php }
                 ?>
                                

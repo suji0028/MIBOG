@@ -1,5 +1,7 @@
 <?php 
-include("config.php"); 
+include("config.php");
+include("header.php"); 
+
 
 session_start();
 
@@ -36,32 +38,38 @@ if(isset($_POST['btn_submit'])) {
 ?>
 
 <body class="Login-body">
-<section class="login">
-  <div class="wrapper">
-    <form action="" method="post">
-      <h1><span>L</span>ogin</h1>
-      <div class="input-box">
-        <input type="text" placeholder="Username" name="username" 
-          value="<?php if(isset($_COOKIE["user_login"])) { echo $_COOKIE["user_login"]; } ?>" required>
-        <i class='bx bxs-user'></i>
-      </div>
-      <div class="input-box">
-        <input type="password" placeholder="Password" name="password" 
-          value="<?php if(isset($_COOKIE["userpassword"])) { echo $_COOKIE["userpassword"]; } ?>" required>
-        <i class='bx bxs-lock-alt'></i>
-      </div>
-      <div class="remember-forgot">
-        <label><input type="checkbox" name="remember" 
-          <?php if(isset($_COOKIE["user_login"])) { echo "checked"; } ?>> Remember Me</label>
-        <a href="#">Forgot Password</a>
-      </div>
-      <button type="submit" class="button" name="btn_submit">Login</button>
-      <div class="register-link">
-        <p>Don't have an account? <a href="register.php">Register</a></p>
-      </div>
-    </form>
+<section class="login-main-sec">
+  <div class="container">
+    <div class="from-inner-area">
+      <form action="" method="post">
+      <h2><span>L</span>ogin</h2>
+        <div class="input-box">
+          <input type="text" id="fname" placeholder="Username" name="username" 
+            value="<?php if(isset($_COOKIE["user_login"])) { echo $_COOKIE["user_login"]; } ?>" required>
+          <i class='bx bxs-user'></i>
+        </div>
+        <div class="input-box">
+          <input type="password" id="fname" placeholder="Password" name="password" 
+            value="<?php if(isset($_COOKIE["userpassword"])) { echo $_COOKIE["userpassword"]; } ?>" required>
+          <i class='bx bxs-lock-alt'></i>
+        </div>
+        <div class="remember-forgot">
+          <label><input type="checkbox" name="remember" 
+            <?php if(isset($_COOKIE["user_login"])) { echo "checked"; } ?>> Remember Me</label>
+          <a href="#">Forgot Password</a>
+        </div>
+        <button type="submit" class="login-btn" name="btn_submit">Login</button>
+        <div class="more-btn-inner-area">
+          <p>Don't have an account? <a href="register.php" class="">Register</a></p>
+        </div>
+      </form>
+    </div>
   </div>
 </section>
 </body>
 
 
+
+<?php 
+include("footer.php");
+?>
