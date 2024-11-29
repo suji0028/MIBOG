@@ -56,7 +56,7 @@ if(isset($_POST['btn_submit'])) {
         <div class="remember-forgot">
           <label><input type="checkbox" name="remember" 
             <?php if(isset($_COOKIE["user_login"])) { echo "checked"; } ?>> Remember Me</label>
-          <a href="#">Forgot Password</a>
+          
         </div>
         <button type="submit" class="login-btn" name="btn_submit">Login</button>
         <div class="more-btn-inner-area">

@@ -57,26 +57,11 @@
                             <img src="img/header-logo.webp" alt="hader-img">
                        </div> 
                        </a>
-                       <!-- <?php
-                            if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == 'true') {
-                            ?>
-                                <li class="nav-item navbar-btn-resp d-flex align-items-center">
-                                    <a href="/MIB/config/logout.php" class="primary-btn">
-                                        <span class="text">Logout</span>
-                                    </a>
-                                </li>
-                            <?php }else{ ?>
-                                <li class="nav-item navbar-btn-resp d-flex align-items-center">
-                                    <a href="/MIB/login.php"  class="primary-btn">
-                                        <span class="text">Login</span>
-                                    </a>
-                                </li>
-                            <?php }
-                        ?> -->
+                       
                         <?php if (isset($_SESSION['user'])) { ?>
-                <li  ><a href="logout.php"><span class="footer-menu-btn"></span> Logout</a></li>
+                <li  ><a href="login.php"><span class="footer-menu-btn"></span> Login</a></li>
             <?php } else { ?>
-                <li><a href="login.php"><span class="footer-menu-btn"></span> Login</a></li>
+                <li><a href="logout.php"><span class="footer-menu-btn"></span> Logout</a></li>
                 <?php }
                 ?>
                                
