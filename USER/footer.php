@@ -85,8 +85,8 @@
                                         <ul>
                                             <li>
                                                 <div class="footer-menu-btn-area">   
-                                                    <a href="Blvcklist.php" class="footer-menu-btn">
-                                                        Blvcklist
+                                                    <a href="Contact.php" class="footer-menu-btn">
+                                                        Contact
                                                     </a>
                                                 </div>
                                             </li>

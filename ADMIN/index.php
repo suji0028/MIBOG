@@ -60,7 +60,7 @@ else {
       </div>
       <div class="remember-forgot">
         <label><input type="checkbox" name="remember"  <?php if(isset($_COOKIE["user_login"])) { ?> checked <?php } ?>>Remember Me</label>
-        <a href="#">Forgot Password</a>
+        
       </div>
       <button type="submit" class="btn" name="btn_submit">Login</button>
     </form>

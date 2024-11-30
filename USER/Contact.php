@@ -1,50 +1,44 @@
-<?php 
-    include("header.php")
+
+<?php include 'header.php'; ?>
+
+<?php
+$con = mysqli_connect("localhost", "root", "", "merged_database");
+if(isset($_POST['submit']))
+{
+	$nm=$_POST['name'];
+	$em=$_POST['email'];
+    $sb=$_POST['subject'];
+	$me=$_POST['message'];
+	$ins="insert into tbl_contact values('','$nm','$em','$sb','$me')";
+	$q=mysqli_query($con,$ins);
+	echo"<script>alert('successfully submitted')</script>";
+}
+
 ?>
-        
-        <!--contact sec start-->
 
-            <div class="contact-sec">
-                <div class="container-fluid">
-                    <div class="contact-innner-area">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="contact-inner-text">
-                                    <p>
-                                        Get in touch
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="content-from-area">
-                                    <div class="content-text">
-                                        <p>
-                                            Write us a message
-                                        </p>
-                                    </div>
-                                    <form action="/action_page.php">
 
-                                        <input type="text" id="from-text" placeholder="Name">
 
-                                        <input type="text" id="from-text" placeholder="Email">
+<body class="contactbody">
 
-                                        <textarea rows="5" id="from-text">Message   </textarea>
 
-                                        <div class="contact-from-submit-btn">
-                                            <button>
-                                                <span>SUBMIT</span>
-                                            </button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <section class="login-main-sec">
+            <div class="container-fluid">
+                <div class="contact-form">
+                    <h1>Contact <span>Us</span></h1>
+                    <p>We are always out there to help you! Fill out the form given below and get a reply from us within 2 business days.</p>
+                <form method="post">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your E-mail" required>
+                    <input type="text" name="subject" placeholder="What brings you here?" required>
+                    <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                    <input type="submit" name="submit" value="Submit" class="submit-btn">
+                </form>
                 </div>
             </div>
+            
+        </section>
 
-        <!--contact sec end-->
+</body>
+<?php include 'footer.php'; ?>
 
-        <?php
-    include("footer.php")
-?>
+</html>    

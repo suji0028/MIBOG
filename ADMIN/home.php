@@ -22,37 +22,7 @@
                                         <img src="img/m1.jpg" alt="black hoodie">
                                     </div> 
                                 </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <div class="img-text-area" >
-                                    <div class="photo-img-area">
-                                        <img src="img/m2.jpg" alt="black hoodie">
-                                    </div> 
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="img-text-area" >
-                                    <div class="photo-img-area">
-                                        <img src="img/m5.jpg" alt="black hoodie">
-                                    </div> 
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="img-text-area" >
-                                    <div class="photo-img-area">
-                                        <img src="img/m3.jpg" alt="black hoodie">
-                                    </div> 
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="img-text-area" >
-                                    <div class="photo-img-area">
-                                        <img src="img/m4.jpg" alt="black hoodie">
-                                    </div> 
-                                </div>
-                            </div>
-                            
+                            </div>                            
                         </div>
                     </div>
                 </div>

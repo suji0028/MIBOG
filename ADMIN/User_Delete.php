@@ -9,7 +9,7 @@ if($data)
     echo "<script>alert('delete successfully...');</script>";
     "<script>window.location.href='User_Action.php'<script>";
 ?>
-<META HTTP-EQUIV="Refresh" CONTENT="0; URL=http://localhost/tour_and_travels/admin/c_Action.php">
+<META HTTP-EQUIV="Refresh" CONTENT="0; URL=http://localhost/MIBOG/ADMIN/User_Action.php">
 
 <?php
 }
